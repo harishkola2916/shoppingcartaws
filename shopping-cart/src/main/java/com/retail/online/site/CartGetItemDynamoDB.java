@@ -36,7 +36,7 @@ public class CartGetItemDynamoDB implements RequestHandler<Object, String> {
 	private Item initDynamoDbClient(int cartId) {
 		AmazonDynamoDB client = AmazonDynamoDBClientBuilder.defaultClient();
 		DynamoDB dynamoDB = new DynamoDB(client);
-		Table table = dynamoDB.getTable("Movie");
+		Table table = dynamoDB.getTable("Cart");
 		// Item item = table.getItem("id", cartId); //for selecting total object
 		// based on primary key
 

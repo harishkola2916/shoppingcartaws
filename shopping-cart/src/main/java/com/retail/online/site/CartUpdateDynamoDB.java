@@ -43,7 +43,7 @@ public class CartUpdateDynamoDB implements RequestHandler<Object, String> {
 	private Item initDynamoDbClient(int cartId) {
 		AmazonDynamoDB client = AmazonDynamoDBClientBuilder.defaultClient();
 		DynamoDB dynamoDB = new DynamoDB(client);
-		Table table = dynamoDB.getTable("Movie");
+		Table table = dynamoDB.getTable("Cart");
 
 		Map<String, String> expressionAttributeNames = new HashMap<String, String>();
 		expressionAttributeNames.put("#n", "name");
