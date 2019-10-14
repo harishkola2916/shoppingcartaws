@@ -10,5 +10,7 @@ APIs:
  Other Labmda Functions:
     Get Cart from Dynamo DB
     Update Cart in Dynamo DB 
+	Push Notification to Mobile
+	Sending Email Using SES Service
  
     
